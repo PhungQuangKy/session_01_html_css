@@ -53,16 +53,16 @@ session_01_html_css/
 
 ### Các loại commit TYPE
 
-| TYPE | Ý nghĩa | Khi nào dùng |
-|------|---------|--------------|
-| `[SETUP]` | Thiết lập dự án | Tạo folder, cấu hình ban đầu |
-| `[FEATURE]` | Thêm tính năng | Implement something new |
-| `[STYLE]` | Styling/CSS | Thêm CSS, layout, styling |
-| `[UI]` | Giao diện | Hover effects, animations |
-| `[BUGFIX]` | Sửa lỗi | Fix bugs |
-| `[REFACTOR]` | Cấu trúc lại | Tối ưu code |
-| `[STATE]` | JavaScript state | Xử lý state, events |
-| `[VALIDATION]` | Validation | Form validation |
+| TYPE           | Ý nghĩa          | Khi nào dùng                 |
+| -------------- | ---------------- | ---------------------------- |
+| `[SETUP]`      | Thiết lập dự án  | Tạo folder, cấu hình ban đầu |
+| `[FEATURE]`    | Thêm tính năng   | Implement something new      |
+| `[STYLE]`      | Styling/CSS      | Thêm CSS, layout, styling    |
+| `[UI]`         | Giao diện        | Hover effects, animations    |
+| `[BUGFIX]`     | Sửa lỗi          | Fix bugs                     |
+| `[REFACTOR]`   | Cấu trúc lại     | Tối ưu code                  |
+| `[STATE]`      | JavaScript state | Xử lý state, events          |
+| `[VALIDATION]` | Validation       | Form validation              |
 
 ### Ví dụ commit messages
 
@@ -83,13 +83,13 @@ git commit -m "[FEATURE] Did some stuff"       # không rõ ràng
 
 ### Số lượng commit tối thiểu
 
-| Bài tập | Số commit tối thiểu |
-|---------|-------------------|
-| Bài 1.1 (Header + Hero) | 3 commits |
-| Bài 1.2 (About + Skills) | 3 commits |
-| Bài 1.3 (Portfolio) | 3 commits |
-| Bài 1.4 (Contact + Footer) | 3 commits |
-| **Tổng cộng** | **12 commits** |
+| Bài tập                    | Số commit tối thiểu |
+| -------------------------- | ------------------- |
+| Bài 1.1 (Header + Hero)    | 3 commits           |
+| Bài 1.2 (About + Skills)   | 3 commits           |
+| Bài 1.3 (Portfolio)        | 3 commits           |
+| Bài 1.4 (Contact + Footer) | 3 commits           |
+| **Tổng cộng**              | **12 commits**      |
 
 ### Workflow commit cho mỗi bài
 
@@ -124,34 +124,38 @@ git commit -m "[REFACTOR] Final responsive adjustments"
 **Mục tiêu:** Xây dựng header navigation và hero section với CTA button
 
 **Kiến thức:**
+
 - Semantic HTML: `<header>`, `<nav>`, `<main>`
 - CSS Box Model: margin, padding, border
 - Flexbox centering
 
 **Yêu cầu:**
+
 - Header cố định (sticky) với logo và navigation links
 - Hero section full viewport height
 - Nút CTA "View My Work" có hover effect
 - Responsive: mobile hamburger menu (CSS-only)
 
 **Starter code:**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <!-- CSS file sẽ được tạo riêng -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header: Logo + Nav links -->
     <!-- Hero: Title + Subtitle + CTA Button -->
-</body>
+  </body>
 </html>
 ```
 
 **Commit requirements:**
+
 ```
 [SETUP] Initialize project structure
 [STYLE] Add base CSS variables and reset
@@ -166,17 +170,20 @@ git commit -m "[REFACTOR] Final responsive adjustments"
 **Mục tiêu:** Xây dựng phần about và skills với progress bars
 
 **Kiến thức:**
+
 - CSS Grid: 2-column layout
 - CSS Typography: font-size, line-height, font-weight
 - CSS Custom Properties (variables)
 - Progress bar animation
 
 **Yêu cầu:**
+
 - 2-column layout: avatar/image + text (desktop), stacked (mobile)
 - Skills section với progress bars (HTML, CSS, JavaScript)
 - Animation khi scroll vào viewport
 
 **Commit requirements:**
+
 ```
 [STYLE] Create about section layout
 [FEATURE] Add skills progress bars
@@ -190,18 +197,21 @@ git commit -m "[REFACTOR] Final responsive adjustments"
 **Mục tiêu:** Xây dựng gallery grid với hover effects
 
 **Kiến thức:**
+
 - CSS Grid: `grid-template-columns`, `gap`
 - Image aspect ratio: `aspect-ratio`
 - Hover effects: `transform`, `scale`
 - CSS-only lightbox
 
 **Yêu cầu:**
+
 - Responsive grid: 3 columns (desktop), 2 (tablet), 1 (mobile)
 - Hover zoom effect trên mỗi item
 - Lightbox overlay khi click (CSS `:target` selector)
 - 6 portfolio items với placeholder images
 
 **Commit requirements:**
+
 ```
 [FEATURE] Build portfolio grid layout
 [FEATURE] Add hover zoom effects
@@ -215,18 +225,21 @@ git commit -m "[REFACTOR] Final responsive adjustments"
 **Mục tiêu:** Xây dựng contact form và responsive footer
 
 **Kiến thức:**
+
 - Form styling: inputs, labels, buttons
 - CSS validation UI: `:valid`, `:invalid`, `:focus`
 - Footer layout với social icons
 - Responsive form layout
 
 **Yêu cầu:**
+
 - Form fields: Name, Email, Message (textarea)
 - Validation UI feedback (border color)
 - Footer với social links (GitHub, LinkedIn, Email)
 - Mobile-first responsive form
 
 **Commit requirements:**
+
 ```
 [FEATURE] Style contact form inputs
 [FEATURE] Add responsive footer
@@ -237,36 +250,53 @@ git commit -m "[REFACTOR] Final responsive adjustments"
 
 ## 📊 Rubric đánh giá
 
-| Tiêu chí | Điểm | Mô tả |
-|----------|------|-------|
-| **Hoàn thành yêu cầu** | 4 | Tất cả 4 bài đều hoàn thành, responsive |
-| **Code quality** | 2 | CSS có variables, tổ chức tốt |
-| **Git commit** | 2 | Đủ commits theo convention |
-| **Problem solving** | 2 | Tự code, không copy nguyên cả file |
+| Tiêu chí               | Điểm | Mô tả                                   |
+| ---------------------- | ---- | --------------------------------------- |
+| **Hoàn thành yêu cầu** | 4    | Tất cả 4 bài đều hoàn thành, responsive |
+| **Code quality**       | 2    | CSS có variables, tổ chức tốt           |
+| **Git commit**         | 2    | Đủ commits theo convention              |
+| **Problem solving**    | 2    | Tự code, không copy nguyên cả file      |
 
 ---
 
 ## 🐛 Troubleshooting thường gặp
 
 ### 1. CSS Grid không responsive
+
 ```css
 /* Sai */
-.grid { display: grid; grid-template-columns: 300px 300px; }
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+}
 
 /* Đúng - dùng auto-fill */
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
 ```
 
 ### 2. Header sticky không hoạt động
+
 ```css
 /* Phải có top: 0 */
-header { position: sticky; top: 0; z-index: 100; }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 ```
 
 ### 3. Form inputs trên mobile quá nhỏ
+
 ```css
 /* Đặt min-height và font-size */
-input, textarea { min-height: 44px; font-size: 16px; }
+input,
+textarea {
+  min-height: 44px;
+  font-size: 16px;
+}
 ```
 
 ---
