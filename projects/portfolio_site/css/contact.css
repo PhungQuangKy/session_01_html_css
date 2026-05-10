@@ -9,3 +9,14 @@
     order: -1; /* Đưa ảnh lên trước text trên mobile */
   }
 }
+@media (max-width: 1023px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}

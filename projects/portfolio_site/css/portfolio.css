@@ -1,0 +1,80 @@
+.portfolio-section {
+  background-color: var(--color-light);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-filters {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Grid Layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột trên desktop */
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+}
+
+.portfolio-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hover Effect: Zoom Image */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay Effect */
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(30, 41, 59, 0.9) 0%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
