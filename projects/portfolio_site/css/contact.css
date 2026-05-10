@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .about-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image {
+    order: -1; /* Đưa ảnh lên trước text trên mobile */
+  }
+}
